@@ -1,0 +1,40 @@
+name: EliteRTP
+version: '${project.version}'
+main: ru.squarecircle.elitertp.EliteRTP
+api-version: '1.16'
+softdepend: [PlaceholderAPI]
+commands:
+  rtpdefault:
+    description: Рандомно телепортирует игрока
+  rtpnear:
+    descripton: Рандомно телепортирует игрока рядом с другими игроками
+  rtpfar:
+    description: Рандомно телепортирует игрока на более далекие расстояния
+  rtpworld:
+    description: Рандомно телепортирует игрока в другой мир
+  elitertp:
+    aliases:
+      - ertp
+  rtp: {}
+permissions:
+  elitertp.channel.default:
+    description: Разрешение на использование команды /rtpdefault
+    default: op
+  elitertp.channel.near:
+    description: Разрешение на использование команды /rtpnear
+    default: op
+  elitertp.channel.far:
+    description: Разрешение на использование команды /rtpfar
+    default: op
+  elitertp.channel.world:
+    description: Разрешение на использование команды /rtpworld
+    default: op
+  elitertp.command.elitertp:
+    description: Разрешение на использование команды /elitertp
+    default: op
+  elitertp.command.rtp:
+    description: Разрешение на использование команды /rtp
+    default: op
+  elitertp.cooldown.bypass:
+    description: Разрешение на обход задержки
+    default: op

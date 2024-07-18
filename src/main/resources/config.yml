@@ -1,0 +1,57 @@
+menu:
+  enabled: true
+  menu-size: 54
+  menu-title: "Ртп"
+  rtpDefault-icon: STONE
+  rtpNear-icon: TNT
+  rtpFar-icon: GRASS_BLOCK
+  rtpWorld-icon: BEDROCK
+  rtpDefault-index: 10
+  rtpNear-index: 13
+  rtpFar-index: 16
+  rtpWorld-index: 20
+  rtpDefault-name: "&aОбычный"
+  rtpNear-name: "&cРядом с игроками"
+  rtpFar-name: "&1Дальний"
+  rtpWorld-name: "&aСреди миров"
+rtp-world-menu:
+  menu-size: 54
+  menu-title: "Ртп в другие миры"
+  default-world-icon: GRASS_BLOCK
+  Worlds-icons:
+    world: GRASS_BLOCK
+    world_nether: NETHERRACK
+    world_the_end: END_STONE
+effects:
+  type: FIREWORK_SHOT # Все эффекты на главной странице плагина
+  length: 1 # сукунды
+channels:
+  default:
+    radius: 1000
+    cooldown: 15
+    foodRemove: 4
+    healRemove: 2
+  near:
+    minOnlineForRtp: 1
+    cooldown: 90
+    foodRemove: 10
+    healRemove: 5
+  far:
+    radius: 2000
+    cooldown: 60
+    foodRemove: 6
+    healRemove: 4
+  world:
+    radius: 5000
+    cooldown: 90
+    foodRemove: 6
+    healRemove: 4
+disabled-worlds:
+  - world_nether
+  - world_the_end
+disabled-tp-worlds:
+  - world_the_end
+blocked-blocks:
+  - AIR
+  - WATER
+  - LAVA
